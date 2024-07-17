@@ -1,0 +1,39 @@
+package cylindertest;
+
+public class Student {
+	public int roll;
+	public String name;
+	public String course;
+	public int m1,m2,m3;
+	
+	public int total() {
+		return m1 + m2 + m3;
+	}
+    public float average() {
+    	return (float)total()/3;
+    }
+    public char grade() {
+       if(average()>=60)
+    	return 'A';
+       else
+    	   return 'B';
+    }
+     public String details() {
+    	 return "Roll No:" + roll+ "\n"+"Name:"+name+ "\n"+"Course:" +course+ "\n";
+     }
+          
+	public static void main(String[] args) {
+		Student sc = new Student();
+		sc.roll = 1;
+		sc.name = "Ikram";
+		sc.course = "Engineering";
+		sc.m1 = 70;
+		sc.m2 = 80;
+		sc.m3 = 65;
+		System.out.println("Total : " +sc.total());
+		System.out.println("Average: " +sc.average());
+		System.out.println("Details: " +sc.details());
+		System.out.println("Grade: " +sc.grade());
+	}
+
+}
