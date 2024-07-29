@@ -1,0 +1,11 @@
+package day12;
+
+public class Addermain {
+
+	public static void main(String[] args) {
+		Adder ad = new Adder();
+		ad.sum(10, 30);
+		ad.sum(10.5, 10);
+	}
+
+}
