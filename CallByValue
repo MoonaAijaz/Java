@@ -1,0 +1,15 @@
+package day12;
+//passing copy of the variable
+public class CallByValue {
+
+	public static void main(String[] args) {
+		Test t = new Test();
+		int number = 100;
+		System.out.println("Before method:" +number);
+		t.m1(number);
+		System.out.println("Atfter method:" +number);
+		t.m2(t);
+
+	}
+
+}
