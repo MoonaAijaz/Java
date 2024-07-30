@@ -1,0 +1,16 @@
+package day13;
+
+public class AccountMain {
+
+	public static void main(String[] args) {
+		Account am = new Account();
+		am.setAccno(100);
+		am.setAmount(1234567);
+		am.setName("Moonam");
+        System.out.println(am.getAccno());
+        System.out.println(am.getAmount());
+        System.out.println(am.getName());
+       
+	}	
+
+}
