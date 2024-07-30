@@ -1,0 +1,21 @@
+package day13;
+
+public class ThisKeyword {
+	int x,y; //class variables 
+	void setData(int x ,int y) 
+	{
+		this.x = x;
+		this.y = y;
+	}
+    void display()
+    {
+    	System.out.println(x+ " " +y);
+    }
+	public static void main(String[] args) {
+		ThisKeyword a = new ThisKeyword();
+		a.setData(10, 20);
+		a.display();
+
+	}
+
+}
