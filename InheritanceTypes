@@ -1,0 +1,42 @@
+package day14;
+class A
+{
+	int a;
+	void display()
+	{
+		System.out.println(a);
+	}
+}
+class B extends A
+{
+	
+	int b;
+	void show()
+	{
+		System.out.println(b);
+	}
+}
+class C extends B
+{
+	int c;
+	void print()
+	{
+		System.out.println(c);
+	}
+}
+public class InheritanceTypes {
+
+	public static void main(String[] args) {
+		 B bobj = new B();
+		 bobj.a = 10;
+		 bobj.b = 20;
+		 bobj.display();
+		 bobj.show();
+        C obj = new C();
+        obj.a = 34;
+        obj.display();
+        obj.b = 45;
+        obj.c = 39;
+	}
+
+}
