@@ -1,0 +1,35 @@
+package day13;
+
+public class StaticDemo {
+     static int a = 10;
+     int b = 20;
+     static void m1 ()
+     {
+    	 System.out.println("this is m1 static method...");
+     }
+     void m2()
+     {
+    	 System.out.println("this is m2 non static method...");
+     }
+     void m() {
+    	 System.out.println(a);
+    	 System.out.println(b);
+    	 m1();
+    	 m2();
+     }
+     static void main()
+     {
+    	 
+     }
+     
+	public static void main(String[] args) {
+		main();
+		m1();
+        System.out.println(a); 
+        StaticDemo s = new StaticDemo();
+        s.m2();
+        System.out.println(s.b);
+        s.m();
+	}
+
+}
