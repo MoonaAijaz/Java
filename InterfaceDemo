@@ -1,0 +1,44 @@
+package day16;
+interface Shape
+{
+	int Length = 10; //final and static variable
+	int width = 20;
+	void circle(); //abstract method
+	default void square() {
+		System.out.println("this is square - default method...");
+	}
+	static void rectangle()
+	{
+		System.out.println("this is rectangle - static method");
+	}
+}
+public class InterfaceDemo implements Shape {
+	public void circle()
+	{
+		System.out.println("this is circle - abstract method");
+	}
+	void triangle()
+	{
+		System.out.println("this is triangle");
+	}
+	public static void main(String[] args) {
+		//Scenario 1
+		/*InterfaceDemo id = new InterfaceDemo();
+		id.circle(); //abstract method
+		id.square();
+		id.triangle();
+		Shape.rectangle();
+		System.out.println(Shape.Length);
+		System.out.println(Shape.width);
+		System.out.println(Shape.Length+Shape.width);
+		*/
+		//Scenario 2
+		Shape sh = new InterfaceDemo() ;
+		sh.circle();
+		sh.square();
+		Shape.rectangle();
+		
+     
+	}
+
+}
