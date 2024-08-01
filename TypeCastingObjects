@@ -1,0 +1,29 @@
+package day18;
+class Parent
+{
+	String name = "John";
+	void m1() {
+		System.out.println("this is m1 from Parent...");
+	}
+}
+class Child extends Parent
+{
+	int id = 101;
+	void m2() {
+		System.out.println("this is m2 from Child...");
+	}
+}
+public class TypeCastingObjects {
+
+	public static void main(String[] args) {
+		Parent p = new Child(); //upcasting
+		p.name = "wonder";
+		p.m1();
+		
+		Parent pr = new Parent();
+		Child c = (Child )p;
+		System.out.println(c.name);
+		System.out.println(c.id);
+		     
+	}
+}
