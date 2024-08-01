@@ -1,0 +1,31 @@
+package day18;
+
+public class TypeCastingConcept {
+
+	public static void main(String[] args) {
+		int intvalue = 100;
+		long longvalue = intvalue;
+		System.out.println(intvalue);
+		
+		float floatvalue = 10.7f;
+		double doublevalue = floatvalue;
+	    System.out.println(doublevalue);
+	    
+	    long slongvalue = 10000;
+	    int intvalue1 = (int) slongvalue;
+	    
+	    double dkoublevalue = 125.55;
+	    float flloatvalue = (float) dkoublevalue;
+	    
+	    int i = 100;
+	    double d = i;
+	    System.out.println(d);
+	    
+	    double dhu = 10.5;
+	    int in = (int)dhu;
+	    System.out.println(in);
+	    
+	    
+	    
+	}
+}
