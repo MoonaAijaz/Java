@@ -1,0 +1,30 @@
+package day18;
+
+public class TypeCastingObjects3 {
+
+	public static void main(String[] args) {
+		Object o = new String("Welcome");
+        StringBuffer sb = (StringBuffer)o; //Rule 3 failed
+        
+        String s = new String("welcome");
+        StringBuffer sbb = (StringBuffer)s; //Rule 1 failed
+        
+        Object op = new String("welcome");
+        StringBuffer sbn = (StringBuffer)o;  //Rule 3 invalid
+        
+        Object opp = new String("welcome");
+        StringBuffer sbh = (String)o;  //Rule 2 failed
+        
+        String s = new String("welcome");
+        StringBuffer sb = (String) s; //Rule 2 failed
+        
+        Object oh = new String("welcome");
+        StringBuffer sbt = (StringBuffer)o; //Rule3 failed
+        
+        Object oops = new String("Welcpme");
+        String sj = (String )oops;  //Rule passed
+        
+        
+	}
+
+}
