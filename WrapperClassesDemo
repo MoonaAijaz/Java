@@ -1,0 +1,33 @@
+package day17;
+
+public class WrapperClassesDemo {
+
+	public static void main(String[] args) {
+		int i = 10; //primitive value
+		double d = 10.5;//primitive
+		char c = 'A';
+		Character cobj = c;
+		boolean b = true;
+		Boolean bobj = b;
+		System.out.println(bobj);
+		System.out.println(cobj);
+		Double dobj = d;
+		System.out.println(dobj);
+		Integer iobj = i; //object
+		System.out.println(iobj);
+		
+		//converting primitive data type to object type - autoboxing
+		//converting object type to primitive - unboxing
+		int intvalue = iobj;
+		double doublevalue = dobj;
+		char charactervalue = cobj;
+		boolean booleanvalue = bobj;
+		System.out.println(intvalue);
+		System.out.println(doublevalue);
+		System.out.println(charactervalue);
+		System.out.println(booleanvalue);
+		
+	  
+	}
+
+}
