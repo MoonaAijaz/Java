@@ -1,0 +1,19 @@
+package day18;
+//Cat ct = (Cat) an;
+
+class Animal{}
+class Dog extends Animal{}
+class Cat extends Animal{}
+
+public class TypeCastingObjects2 {
+
+	public static void main(String[] args) {
+		Animal an = new Dog(); //child class object stored in parent class
+		Dog dg = (Dog)an;
+		
+		
+		
+
+	}
+
+}
