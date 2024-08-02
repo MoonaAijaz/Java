@@ -1,0 +1,25 @@
+package day19;
+
+public class MultipleCatchBlocks {
+
+	public static void main(String[] args) {
+	System.out.println("program is started...");
+	String s = null;
+	try {
+	System.out.println(s.length());
+	}
+	catch(Exception e)
+	{
+		System.out.println("Exception handled");
+	}
+	/*catch(NullPointerException e)
+	{
+		System.out.println("handled NullPointer Exception");
+	}
+	catch(NumberFormatException e)	
+	{
+		System.out.println("handled NumberFormat Exception");
+	}
+	System.out.println("program is completed");*/
+}
+}
