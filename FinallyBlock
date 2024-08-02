@@ -1,0 +1,21 @@
+package day19;
+
+public class FinallyBlock {
+
+	public static void main(String[] args) {
+		String s = "welcome";
+		try
+		{
+		System.out.println(s.length());
+		}
+		catch(NumberFormatException e)
+		{
+			System.out.println("exception handled...");
+		}	
+		finally
+		{
+			System.out.println("completed the program finally...");
+		}
+	}
+
+}
