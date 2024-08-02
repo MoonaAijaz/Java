@@ -1,0 +1,24 @@
+package day19;
+
+import java.util.Scanner;
+
+public class HandleExceptions {
+
+	public static void main(String[] args) {
+		System.out.println("program is started...");
+		Scanner sc = new Scanner(System.in);
+		//Example 1
+		System.out.println("Enter a number:");
+		int num = sc.nextInt();
+		try {
+		System.out.println(100/num);
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println("invalid data provided...");
+			System.out.println(e.getMessage());
+		}
+		System.out.println("program is completed...");
+	}
+
+}
