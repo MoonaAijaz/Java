@@ -1,0 +1,30 @@
+package day19;
+
+import java.util.Scanner;
+
+public class HandleExceptions1 {
+
+	public static void main(String[] args) {
+		int a[] = new int[5];
+		Scanner sc = new Scanner(System.in);	
+		System.out.println("Enter the position(0-4):");
+		int pos = sc.nextInt();
+		System.out.println("Enter the value:");
+		int value = sc.nextInt();
+		
+		try 
+		{
+	    
+		a[pos]= value;
+		System.out.println(a[pos]);
+		}
+		catch(ArrayIndexOutOfBoundsException e)
+		
+		{
+			System.out.println("invalid position");
+			System.out.println(e.getMessage());
+		}
+		
+	}
+
+}
