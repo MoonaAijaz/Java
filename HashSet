@@ -1,0 +1,44 @@
+package day20;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+public class HashSetDemo {
+
+	public static void main(String[] args) {
+		HashSet myset = new HashSet();
+		//adding elements
+		myset.add(100);
+		myset.add(10.5);
+		myset.add("welcome");
+		myset.add(true);
+		myset.add('A');
+		myset.add(100);
+		myset.add(null);
+		
+		{
+		System.out.println(myset);
+		}
+		//Inserting element not possible
+		
+		//Access specific element not possible
+		//Convert HashSet -->ArrayList
+		
+		ArrayList al = new ArrayList(myset);
+		System.out.println(al);
+		System.out.println(al.get(2));
+		System.out.println();
+		for (Object x : myset) {
+			System.out.print(x + " ,");
+		}
+		Iterator it = myset.iterator();
+		while(it.hasNext())
+		{
+			System.out.println(it.next());
+		}
+		System.out.println(myset.size());
+	}
+
+}
