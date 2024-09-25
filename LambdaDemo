@@ -1,0 +1,14 @@
+package LambdaExpression;
+@FunctionalInterface
+interface Mylambda
+{
+	public void display();	
+}
+public class LambdaDemo {
+
+	public static void main(String[] args) {
+		Mylambda m =()->{System.out.println("Hello World");};
+			
+		m.display();
+	}
+}
