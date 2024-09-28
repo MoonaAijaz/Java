@@ -1,0 +1,32 @@
+package CollectionFramework;
+
+import java.util.LinkedHashMap;
+import java.util.Map; // Import Map interface
+
+public class LinkedHashMapDemo {
+
+    public static void main(String[] args) {
+        // Creating a LinkedHashMap with a maximum capacity of 5
+        LinkedHashMap<Integer, String> lhm = new LinkedHashMap<Integer,String>(5) {
+            // Override removeEldestEntry to limit the size
+            protected boolean removeEldestEntry(Map.Entry<Integer, String> e) {
+                return size() > 5; // Remove the eldest entry if size exceeds 5
+            }
+        };
+
+        // Adding elements to the map
+        lhm.put(1, "A");
+        lhm.put(2, "B");
+        lhm.put(3, "C");
+        lhm.put(4, "D");
+        lhm.put(5, "E");
+
+        // Accessing elements
+        String s = lhm.get(2); // Accessing element with key 2
+        s = lhm.get(5);        // Accessing element with key 5
+        s = lhm.get(1);        // Accessing element with key 1
+
+        // Iterating over the map and printing the elements
+        lhm.forEach((k, v) -> System.out.println(k + " " + v));
+    }
+}
